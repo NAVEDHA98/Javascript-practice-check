@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Edit Menu</title>
+  <link rel="stylesheet" href="editmenu.css">
+</head>
+
+<body>
+  <div class=header>
+    <p id="n">truYum</p>
+    <p id="logo"><img src="sample.jpg" style="width:60px;height:60px;display:inline-block;padding-left:10px;"></img></p>
+
+    <p id="s"><a href="AdminPage.html" id="a">Menu</a></p>
+  </div>
+
+  <div class="article">
+
+    <div class=tab>
+      <p id=menuitems>Edit Menu Item</p>
+
+      <table>
+        <tr>
+          <td colspan="4">
+            <b>Name</b>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <input type="text" id="name" style="width:800px;">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>Price (Rs.)</b>
+          </td>
+          <td>
+            <b>Active</b>
+          </td>
+          <td>
+            <b>Date of Launch</b>
+          </td>
+          <td>
+            <b>Category</b>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" id="price">
+          </td>
+          <td>
+            <input type="radio" name="active" id="yesact" value="Yes">Yes<input type="radio" name="active" id="noact"
+              value="No">No
+          </td>
+          <td>
+            <input type="text" id="date">
+          </td>
+          <td>
+            <select id="category">
+              <option>Starters</option>
+              <option>Main course</option>
+              <option>Dessert</option>
+              <option>Drinks</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="delivery"> <b>Free Delivey</b>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" class="button" id="submit" value="Update">
+
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p style="width:190px;height:auto;padding-top:20px;margin-left:20px">Copyright&copy; 2019
+  </div>
+  <script src="editmenu.js"></script>
+</body>
+
+</html>
